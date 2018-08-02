@@ -1,5 +1,6 @@
 <?php
 	$base_url = 'http://api.openweathermap.org/data/2.5/weather?q=nagoya&appid=';
+# 	&appid is openweathermap api token.
 	
 	$response = file_get_contents($base_url);
 	$result = json_decode($response,true);
@@ -71,6 +72,7 @@
 ?></p>
 <p>Finance<br />
 <?php
+#	&q is 'securities code'.
 	$base_url = 'https://www.google.com/finance/getprices?p=7d&i=86400&x=TYO&q=';
 	$base2_url = 'https://www.google.com/finance/getprices?p=7d&i=86400&x=TYO&q=';
 
